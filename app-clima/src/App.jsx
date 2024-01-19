@@ -16,7 +16,7 @@ export default function App() {
     temp: "",
     condition: "",
     icon: "",
-    conditionText: ""
+    conditionText: "",
   });
 
   const onSubmit = async (e) => {
