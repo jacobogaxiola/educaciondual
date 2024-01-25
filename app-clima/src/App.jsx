@@ -24,7 +24,7 @@ export default function App() {
     setLoading(true);
     setError({ error: false, message: "" });
     try {
-      if (!city.trim()) throw { message: "El campo ciudad es obligatorio" };
+      if (!city.trim()) throw { message: "El campo de la ciudad es obligatorio" };
       const response = await fetch(`${API_WEATHER}${city}`);
       const data = await response.json();
       if (data.error) throw { message: data.error.message };
