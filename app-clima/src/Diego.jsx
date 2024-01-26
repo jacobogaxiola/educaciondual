@@ -6,7 +6,7 @@ const API_WEATHER = `https://api.weatherapi.com/v1/current.json?key=${
   import.meta.env.VITE_API_KEY
 }&lang=es&q=`;
 
-export default function Gael() {
+export default function Diego() {
   const [city, setCity] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState({ error: false, message: "" });
@@ -46,7 +46,7 @@ export default function Gael() {
   return (
     <Container maxWidth="xs" sx={{ m: 2 }}>
       <Typography variant="h3" component="h1" align="center" gutterBottom>
-        Weather App
+        Weather App Diego
       </Typography>
       <Box
         sx={{ display: "grid", gap: 2 }}
