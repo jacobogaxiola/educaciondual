@@ -46,7 +46,7 @@ export default function Fran() {
   return (
     <Container maxWidth="xs" sx={{ m: 2 }}>
       <Typography variant="h3" component="h1" align="center" gutterBottom>
-        Weather App
+        Weather App Fran
       </Typography>
       <Box
         sx={{ display: "grid", gap: 2 }}
