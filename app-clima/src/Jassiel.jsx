@@ -46,7 +46,7 @@ export default function Jassiel() {
   return (
     <Container maxWidth="xs" sx={{ m: 2 }}>
       <Typography variant="h3" component="h1" align="center" gutterBottom>
-        Weather Jassiel
+        Weather App Jassiel
       </Typography>
       <Box
         sx={{ display: "grid", gap: 2 }}
