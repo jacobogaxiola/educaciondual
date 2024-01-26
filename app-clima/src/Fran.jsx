@@ -6,7 +6,7 @@ const API_WEATHER = `https://api.weatherapi.com/v1/current.json?key=${
   import.meta.env.VITE_API_KEY
 }&lang=es&q=`;
 
-export default function Yan() {
+export default function App() {
   const [city, setCity] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState({ error: false, message: "" });
@@ -46,7 +46,7 @@ export default function Yan() {
   return (
     <Container maxWidth="xs" sx={{ m: 2 }}>
       <Typography variant="h3" component="h1" align="center" gutterBottom>
-        Weather Yan
+        Weather App
       </Typography>
       <Box
         sx={{ display: "grid", gap: 2 }}
