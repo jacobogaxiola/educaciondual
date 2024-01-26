@@ -6,7 +6,7 @@ const API_WEATHER = `https://api.weatherapi.com/v1/current.json?key=${
   import.meta.env.VITE_API_KEY
 }&lang=es&q=`;
 
-export default function App() {
+export default function Gael() {
   const [city, setCity] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState({ error: false, message: "" });
