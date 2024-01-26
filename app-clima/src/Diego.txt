@@ -1,0 +1,9 @@
+import { First Love } From "./src/Diego.txt"
+
+export default App () {
+    
+    Desde esa noche me dejaste derrotado
+        No sé qué hiciste que no me he curado
+            Ya llevo meses y no te he olvidado  
+                Tú me dañaste y lo has aceptado
+}
