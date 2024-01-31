@@ -21,7 +21,7 @@ export default function Jassiel() {
       }}
     >
       <Img
-        src=""
+        src="https://lh3.googleusercontent.com/ogw/ANLem4aI2GuSmnF3-8UBxghFODbnY2ASnnc3o8Pq_ym9=s32-c-mo"
         alt="random"
       />
       <Box sx={{ flexGrow: 1 }}>
