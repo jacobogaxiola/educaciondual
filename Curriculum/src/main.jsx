@@ -7,7 +7,7 @@ import Luis from './App.jsx'
 import Francisco from './App.jsx'
 import Isis from './App.jsx'
 import Jassiel from './App.jsx'
-import Yan from './App.jsx'
+import Yan from './Yan.jsx'
 import Lenin from './App.jsx'
 import Paulina from './App.jsx'
 
