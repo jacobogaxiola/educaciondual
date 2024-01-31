@@ -8,7 +8,7 @@ import Fran from './Fran.jsx'
 import Isis from './Isis.jsx'
 import Jassiel from './Jassiel.jsx'
 import Yan from './Yan.jsx'
-import Lenin from './App.jsx'
+import Lenin from './Lenin.jsx'
 import Paulina from './Paulina.jsx'
 
 import '@fontsource/roboto/300.css';
