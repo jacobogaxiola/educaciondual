@@ -10,7 +10,7 @@ const Img = styled("img")({
   objectPosition: "center",
 });
 
-export default function Product() {
+export default function Lenin() {
   return (
     
     <Paper
