@@ -10,7 +10,7 @@ import { Box } from "@mui/system";
     objectPosition: "center",
   });
   
-  export default function Product() {
+  export default function Isis() {
     return (
       <Paper
         sx={{
