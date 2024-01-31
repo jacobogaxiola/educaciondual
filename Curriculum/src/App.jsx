@@ -3,9 +3,9 @@ import './App.css'
 function App() {
   return (
     <>
-    <Container>
+    <container>
     <h1>Curriculum</h1>
-    </Container>
+    </container>
     </>
   )
 }
