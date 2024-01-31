@@ -4,7 +4,7 @@ function App() {
   return (
     <>
     <Container>
-    <h1>Curriculum</h1>
+    <h1>Curriculum de Jacobo</h1>
     </Container>
     </>
   )
