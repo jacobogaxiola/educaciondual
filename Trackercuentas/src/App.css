@@ -32,3 +32,29 @@ body{
     border-radius: 5px;
     outline: none;
 }
+.form-add-money input[type="submit"] {
+  display: block;
+  margin: 21px auto 0px;
+  font-size: inherit;
+  padding: 8px 7px;
+  width: 230px;
+  border: 0px;
+  border-radius:5px;
+  cursor: pointer;
+  background-color: #060708;
+  color: #fff; 
+  }
+  
+  .from--add-money p {
+  color:#fff;
+  font-weight: 500;
+  }
+  p.error{
+  color: #fff;
+  background-color: #d52121;
+  display: inline-block;
+  padding: 1px 18px 4px;
+  border-radius: 7PX; 
+  font-weight: 400;
+  display: block;
+  }
