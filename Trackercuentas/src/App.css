@@ -119,3 +119,45 @@ body{
     background-color: #fff;
     color: #060708;
   }
+  /* single item*/
+.single-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  height: 110px;
+  margin:2% 4% 2%;
+  }
+  .single-item a{
+  text-decoration: none;
+  font-weight: 600;
+  background-color: aquamarine;
+  padding: 5px 11px 8px;
+  border-redius: 5px;
+  color: #000;
+  }
+  .single-item a.delete:hover {
+  background-color: #ff020282;
+  }
+  .single-item a.edit:hover {
+  background-color: #2499f18c;
+  }
+  .single-item img{
+  width: 155px;
+  height: auto;
+  }
+  
+  p.author {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  gap: 7px;
+  color: #000;
+  }
+  p.author a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  }
