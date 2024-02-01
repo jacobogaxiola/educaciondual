@@ -1,4 +1,4 @@
-import SimgleItems from "./SimgleItem";
+import SimgleItem from "./SimgleItem";
 
 const DisplayItems = ({ subs, eliminarItem, editItem }) => {
     return (
