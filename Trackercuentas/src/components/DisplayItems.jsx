@@ -9,7 +9,7 @@ const DisplayItems = ({ subs, eliminarItem, editItem }) => {
 		     <SimgleItem
 		     key={item.id}
 		     id={item.id}
-		     prince={item.prince}
+		     price={item.price}
 		     type={item.type}
 		     eliminarItem={eliminarItem}
 		     editItem={editItem}
@@ -21,4 +21,4 @@ const DisplayItems = ({ subs, eliminarItem, editItem }) => {
     );
 }
 
-export default DisplayItem;
+export default DisplayItems;

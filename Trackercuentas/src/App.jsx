@@ -6,11 +6,11 @@ import MainControl from './components/MainControl';
 
 function App () {
   const[count, setCount] = useState(0);
-  const[isValid, setisValid] = useState(false);
+  const[isValid, setIsValid] = useState(false);
 
   const component = isValid
     ? <MainControl count={count} />
-    : <FormAddMoney setCount={setCount} setisValid={setisValid}/>
+    : <FormAddMoney setCount={setCount} setisValid={setIsValid}/>
 
     return (
       <div className='App'>

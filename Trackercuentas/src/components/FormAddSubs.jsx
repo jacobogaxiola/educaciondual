@@ -1,6 +1,6 @@
 import { useState } from "react";
 const FormAddSubs =({ setType,
-    setPrince,
+    setPrice,
     type,
     price,
     setSubs,
@@ -37,7 +37,7 @@ const FormAddSubs =({ setType,
             } else{
                 const data = {
                     type: type,
-                    prince: price,
+                    price: price,
                     id: Date.now()
                 }
                 setSubs([...subs, data]);

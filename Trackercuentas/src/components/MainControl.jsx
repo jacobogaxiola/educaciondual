@@ -6,9 +6,9 @@ import FormAddSubs from "./FormAddSubs";
 const MainControl = ({ count }) => {
   const [subs, setSubs] = useState([]);
   const [type, setType] = useState("");
-  const [price, subPrice] = useState("");
+  const [price, setPrice] = useState("");
   const [editId, setEditId] = useState("");
-  const [spent, subSpent] = useState("");
+  const [spent, setSpent] = useState("");
 
   const eliminarItem = (id) => {
     const newList = subs.filter((item) => item.id != id);
