@@ -1,51 +1,50 @@
 import { useState } from "react";
-import Balance from "./DisplayItems";
-import DisplayItems from "./FormAddSubs";
+import Balance from "./Balance";
+import DisplayItems from "./DisplayItems";
 import FormAddSubs from "./FormAddSubs";
 
 const MainControl = ({ count }) => {
-  const [subs, setSubs] = useState([]);
-  const [type, setType] = useState("");
-  const [price, setPrice] = useState("");
-  const [editId, setEditId] = useState("");
-  const [spent, setSpent] = useState("");
+    const [subs, setSubs ] = useState([]);
+    const [type, setType] = useState("");
+    const [price, setPrice] = useState("");
+    const [editId, setEditId] = useState("");
+    const [spent, setSpent] = useState(0);
 
-  const eliminarItem = (id) => {
-    const newList = subs.filter((item) => item.id != id);
-    setSubs(newList);
-  };
+    const eliminarItem = id => {
+        const newList = subs.filter(item => item.id != id);
+        setSubs(newList);
+    }
 
-  const editItem = (id) => {
-    setEditId(id);
-    subs.map((item) => {
-      setType(item.type);
-      setPrice(item.price);
-    });
-  };
+    const editItem = id => {
+        setEditId(id);
+        subs.map(item => {
+            if (item.id === id) {
+                setType(item.type);
+                setPrice(item.price);
+            }
+        })
+    }
 
-  return (
-    <>
-      <div className="main-form">
-        <Balance count={count} subs={subs} spent={spent} setSpent={setSpent} />
-        <FormAddSubs
-          setType={setType}
-          setPrice={setPrice}
-          type={type}
-          price={price}
-          setSubs={setSubs}
-          subs={subs}
-          editId={editId}
-          setEditId={setEditId}
-          spent={spent}
-          count={count}
-        />
-      </div>
-      <DisplayItems
-        subs={subs}
-        eliminarItem={eliminarItem}
-        editItem={editItem}
-      />
-    </>
-  );
-};
+    return ( 
+        <>
+            <div className="main-form">
+                <Balance count={count} subs={subs} spent={spent} setSpent={setSpent}/>
+                <FormAddSubs 
+                setType={setType} 
+                setPrice={setPrice}
+                type={type} 
+                price={price}
+                setSubs={setSubs}
+                subs={subs} 
+                editId={editId}
+                setEditId={setEditId}
+                spent={spent}
+                count={count}
+                />
+            </div>
+            <DisplayItems subs={subs} eliminarItem={eliminarItem} editItem={editItem}/>
+        </>
+    );
+}
+ 
 export default MainControl;
