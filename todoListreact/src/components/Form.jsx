@@ -1,6 +1,6 @@
 import React from "react"
 
-const Form = {( handleChange, addTask, tarea)} => {
+const Form = ({ handleChange, addTask, tarea}) => {
     return (
         <div>
             <form onSubmit={addTask}>
