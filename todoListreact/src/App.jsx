@@ -19,6 +19,20 @@ function App() {
       alert('Debes agregar algo')
       return;
     }
+    const nuevaTarea = {
+      id: Date.now(),
+      tarea,
+      completada: false
+    }
+    const totalTareas =[nuevaTarea, ...tareas]
+    setTareas(totalTareas);
+    setTarea("")
+  }
+  const borrarTarea = id =>{
+    const tareasActualizadas = tareas.filter(tarea =>{
+      return tarea.id != id
+    })
+    setTarea(tareasActualizadas)
   }
   return (
     <>
@@ -27,6 +41,18 @@ function App() {
      handleChange = {handleChange}
      tarea = {tarea} 
      />
+     {tareas.length>1&&(
+      <button onClick={()=>setTareas([])}>vacias tareas</button>
+     )}
+     {tareas.map(tarea =>(
+      <Task
+      key = {tarea.id}
+      id = {tarea.id}
+      tarea = {tarea}
+      borrartarea = {borrarTarea}
+      />
+     ))}
+    
     </>
   )
 }
